@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/main.min.css">
+    <title></title>
+  </head>
+
+  <body>
+    <div data-scroll-container>
+
+      <!-- Navigation bar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation" data-scroll-section>
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item logo" href="index.html">
+              <span class="bonjour">bonjour</span> <span class="hello"> / hello </span>
+            </a>
+
+            <a role="button" class="navbar-burger" data-target="navbar" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="navbar-menu" id="navbar">
+            <div class="navbar-end">
+              <a class="navbar-item numbered-item" href="about.html">
+                <span class="digit"> 01 • </span>
+                <span class="label">about</span>
+              </a>
+              <a class="navbar-item numbered-item" href="works.html">
+                <span class="digit"> 02 • </span>
+                <span class="label">works</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <section class="title" data-scroll-section>
+        <div class="container">
+          <div class="numbered-list">
+            <a class="numbered-item" href="works.html">
+              <span class="digit"> 02 • </span>
+              <span class="label">works</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" data-scroll-section>
+        <div class="container" data-scroll data-scroll-speed="0.5">
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="portfolio-content">
+                <h1>Flightlog app</h1>
+                <span class="separator"></span>
+                <p>product manager</p>
+                <p class="secondary">la chouette company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-grid project-2" data-scroll-section>
+        <div class="container">
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-desc">
+                <h3 class="h2">Le projet</h3>
+                <p>Création d'une application d'amélioration du suivi de projet et de la gestion client.</p>
+                <ul>
+                  <li>Participation à la conception fonctionnelle de l'outil</li>
+                  <li>Déclinaison graphique des interfaces de l'application</li>
+                  <li>Suivi et organisation projet</li>
+                  <li>Participation à la compagne de lancement de produit</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-img img-1"></div>
+            </div>
+          </div>
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-img img-2"></div>
+            </div>
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-img img-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="back" data-scroll-section>
+        <div class="container" data-scroll data-scroll-speed="0.5">
+          <a href="works.html">↵ Retour à la liste des projets </a>
+        </div>
+      </section>
+
+
+
+      <!-- Footer -->
+      <footer class="footer" data-scroll-section>
+        <div class="container">
+          <div class="content-footer">
+            <div class="social">
+              <a href="https://medium.com/@so.louvrier" target="_blank" class="medium" data-scroll data-scroll-speed="1" data-scroll-position="bottom"></a>
+              <a href="https://www.linkedin.com/in/solene-louvrier/" target="_blank" class="linkedin" data-scroll data-scroll-speed="2" data-scroll-position="bottom"></a>
+              <a href="https://www.instagram.com/miranda_cairn/" target="_blank" class="instagram" data-scroll data-scroll-speed="3" data-scroll-position="bottom"></a>
+            </div>
+            <h2> solène <span> louvrier </span> </h2>
+            <p>
+              <a href="mailto:contact@bonjoursolene.fr">contact@bonjoursolene.fr</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../build/main.js" charset="utf-8"></script>
+  </body>
+</html>

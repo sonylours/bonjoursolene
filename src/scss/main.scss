@@ -1,0 +1,493 @@
+@import "./init.scss";
+@import "../../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
+
+
+//typography
+html {
+  font-size: 20px;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-family: $family-secondary;
+}
+
+.jumbo {
+  font-size: $title-jumbo;
+}
+
+h1, .h1 {
+  font-size: $title-1;
+  line-height: 1.2em;
+}
+
+h2, .h2 {
+  font-size: $title-2;
+  line-height: 1.2;
+}
+
+h3, .h3 {
+  font-size: $title-3;
+  line-height: 1.2;
+}
+
+h4, .h4 {
+  font-size: $large-font-size;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.disappear{
+  opacity:0;
+  transition: opacity 3s;
+}
+.appear{
+  opacity:1;
+}
+
+.disabled {
+  opacity: 0.4!important;
+}
+
+//global
+body.hp {
+  background-image: url('../img/bg-80.jpg');
+  background-repeat: no-repeat;
+}
+
+.separator {
+  background: $secondary;
+  height: 4px;
+  width: 56px;
+  display: block;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  nav {
+    .container {
+      padding: 0 16px;
+    }
+  }
+}
+
+//navbar
+body.hp {
+  .navbar {
+    background: transparent;
+  }
+}
+
+.navbar {
+  padding: 58px 0;
+  background-image: url('../img/bg-nav.jpg');
+  background-repeat: no-repeat;
+  .navbar-item.logo {
+    color: $white;
+    font-size: $title-3;
+    .bonjour {
+      font-weight: bold;
+      font-family: $family-secondary;
+    }
+    .hello {
+      letter-spacing: 5px;
+      padding-left: 8px;
+    }
+  }
+  .navbar-burger {
+    color: $white;
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    padding: 32px;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    border: 1px solid $primary-lighter;
+    box-shadow: none;
+    border-radius: 4px;
+    .navbar-item {
+      padding: 24px 16px;
+    }
+  }
+}
+
+.numbered-list {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a.numbered-item:hover {
+  .label {
+    color: $secondary!important;
+    transition: 0.3s;
+  }
+}
+
+.numbered-item {
+  padding:0;
+  align-items: baseline;
+  display: flex;
+  .digit {
+    font-size: $small-font-size;
+    color: $primary-light;
+  }
+  .label {
+    font-family: $family-secondary;
+    font-size: $title-3;
+    padding-left: 8px;
+    color: $primary;
+    font-weight: normal;
+  }
+}
+
+.numbered-item:first-child {
+  padding-right: 64px;
+}
+
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  background: transparent;
+  color: $secondary;
+}
+
+.main-links {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  .numbered-list {
+    .numbered-item {
+      .digit {
+        font-size: $body-font-size;
+      }
+      .label {
+        font-size: $title-2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-links {
+    height: 50vh;
+    .numbered-item {
+      padding: 0 32px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.title {
+  padding: 80px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    .navbar-item {
+      padding-left: 0;
+    }
+    .job-title {
+      display: flex;
+      justify-content: space-between;
+      width: 355px;
+      flex-wrap: wrap;
+      h2 {
+        font-family: $family-primary;
+        font-size: $body-font-size;
+        color: $primary-light;
+        margin: 8px 0;
+      }
+    }
+  }
+}
+
+//hero
+.hero {
+  line-height: 0.8;
+  .hero-body {
+    padding: 0;
+    .container {
+      h1, h2 {
+        text-align: center;
+        line-height: 1;
+      }
+    }
+    span.h1 {
+      color: $primary-light;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-body {
+    align-items:flex-end!important;
+  }
+}
+
+.hero.is-fullheight {
+  min-height: calc(102vh - 152px);
+}
+
+//about
+.fullname {
+  width: 303px;
+  margin-bottom: 40px;
+  h1, .h1 {
+    line-height: 1;
+  }
+  h2 {
+    padding-left: 70px;
+  }
+}
+
+.bio {
+  margin-bottom: 96px;
+}
+
+.experience {
+  height: 100%;
+  h3 {
+    margin-bottom: 32px;
+  }
+  .content-xp {
+    margin-bottom: 56px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      .date {
+        margin: 0 0 16px 0;
+      }
+      .separator {
+        margin-bottom: 16px;
+      }
+    }
+    .right {
+      h4 {
+        font-size: $body-font-size;
+        font-family: $family-sans-serif-bold;
+        margin-bottom: 8px;
+      }
+      .secondary {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.vrac {
+  margin-top: 40px;
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .experience {
+    .content-xp {
+      .left {
+        align-items: flex-end;
+        .date {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+//works
+.portfolio {
+  .portfolio-content {
+    margin-bottom: 80px;
+    h2 {
+      a {
+        color: $primary;
+      }
+      a:hover {
+        color: $primary-light!important;
+        transition: 0.3s;
+      }
+    }
+    .separator {
+      margin: 24px 0;
+    }
+    .soon {
+      color: $primary;
+      font-size: $small-font-size;
+      margin-top: 16px;
+    }
+    .detail {
+      color: $primary-light;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+
+.portfolio-grid {
+  .columns {
+    align-items: stretch;
+    .portfolio-grid-desc {
+      background-color: $primary-lighter;
+      padding: 56px;
+      height: 100%;
+      h3 {
+        margin-bottom: 24px;
+      }
+      ul{
+        margin: 16px 0;
+        list-style: initial;
+        li {
+          margin: 8px 0 8px 24px;
+        }
+      }
+    }
+    .portfolio-grid-img {
+      width: 100%;
+      padding-top: 100%; /* 1:1 Aspect Ratio */
+      position: relative; /* If you want text inside of it */
+      border : 1px solid $primary-lighter;
+    }
+  }
+}
+
+.portfolio-grid.project-1 {
+  .img-1 {
+    background-image: url('../img/project-1/desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2 {
+    background-image: url('../img/project-1/tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3 {
+    background-image: url('../img/project-1/sketch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.portfolio-grid.project-2 {
+  .img-1 {
+    background-image: url('../img/project-2/ipad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2 {
+    background-image: url('../img/project-2/imac.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3 {
+    background-image: url('../img/project-2/sketch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.portfolio-grid.project-3 {
+  .img-1 {
+    background-image: url('../img/project-3/mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2 {
+    background-image: url('../img/project-3/macbook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3 {
+    background-image: url('../img/project-3/ipad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.portfolio-grid.project-4 {
+  .img-1 {
+    background-image: url('../img/project-4/macbook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2 {
+    background-image: url('../img/project-4/imac.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3 {
+    background-image: url('../img/project-4/ipad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.back {
+  padding: 32px 0;
+  a {
+    color: $primary-light;
+  }
+}
+
+
+//footer
+footer {
+  margin-top: 80px;
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    .social {
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        margin-bottom: 8px;
+        a {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+        }
+        .medium {
+          background: $black;
+        }
+        .linkedin {
+          background: $linkedin;
+        }
+        .instagram {
+          background: $instagram;
+        }
+      }
+    h2 {
+      span {
+        color: $primary-light;
+      }
+    }
+    a {
+      font-size: $small-font-size;
+      letter-spacing: .8px;
+      color: $primary;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  footer {
+    padding-left:2em!important;
+    .container {
+      padding: 0;
+      justify-content: flex-start;
+    }
+  }
+}

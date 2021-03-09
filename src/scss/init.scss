@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+//Import font-face
+@font-face {
+    font-family: "jazmin_altmedium";
+    src: url('../font/jazmin_alt_medium-webfont.woff2') format('woff2'),
+         url('../font/jazmin_alt_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jeko-black';
+    src: url('../font/jeko_black-webfont.woff2') format('woff2'),
+         url('../font/jeko_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jeko-semibold';
+    src: url('../font/jeko_semi_bold-webfont.woff2') format('woff2'),
+         url('../font/jeko_semi_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** bulma **/
+// Set your variable
+$blue: #060670;
+$red: #FF7777;
+$primary-light: #B4B4D4;
+$linkedin: #0A66C2;
+$instagram: #EF0075;
+$white: #fff;
+$primary-lighter : #F0F0F6;
+
+
+// Update Bulma's global variables
+$primary: $blue;
+$secondary: $red;
+
+$body-color: $primary;
+$link: $primary;
+
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+$family-serif: "jazmin_altmedium", serif;
+$family-sans-serif: "jeko-semibold", sans-serif;
+$family-sans-serif-bold :"jeko-black", sans-serif;
+
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+
+$size-1: 6rem;
+$size-2: 3.2rem;
+$size-3: 1.6rem;
+$size-4: 1.2rem;
+$size-5: 1rem;
+$size-6: .8rem;
+
+$title-jumbo: $size-1;
+$title-1: $size-2;
+$title-2: $size-3;
+$title-3: $size-4;
+
+$title-weight: 400;
+$title-color: $primary;
+
+$large-font-size: $size-4;
+$body-font-size: $size-5;
+$small-font-size: $size-6;
+
+$navbar-height: 0;
+
+$footer-background-color: $white;
+$footer-padding: 80px 32px;
+
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
