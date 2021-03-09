@@ -5,7 +5,7 @@ module.exports = {
   entry: ['./src/main.js', './src/scss/main.scss'],
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'docs/build'),
+    path: path.resolve('./docs/build'),
     clean: true,
   },
   module: {
