@@ -1,5 +1,5 @@
 // cd sites/bonjoursolene; npm run watch
-// cd sites/bonjoursolene; npm run build; git commit -am "update"; git push
+// cd sites/bonjoursolene; npm run build; git add -A; git commit -am "update"; git push
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
