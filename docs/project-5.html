@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/main.min.css">
+    <title>ActiveLook | Solène Louvrier — ux • ui designer & product manager</title>
+    <meta name="description" content="Solène Louvrier — ux/ui designer & product manager à Grenoble">
+  </head>
+
+  <body>
+    <div data-scroll-container>
+
+      <!-- Navigation bar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation" data-scroll-section>
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item logo" href="https://bonjoursolene.fr">
+              <span class="bonjour">bonjour</span> <span class="hello"> / hello </span>
+            </a>
+
+            <a role="button" class="navbar-burger" data-target="navbar" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="navbar-menu" id="navbar">
+            <div class="navbar-end">
+              <a class="navbar-item numbered-item" href="about">
+                <span class="digit"> 01 • </span>
+                <span class="label">about</span>
+              </a>
+              <a class="navbar-item numbered-item" href="works">
+                <span class="digit"> 02 • </span>
+                <span class="label">works</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <section class="title" data-scroll-section>
+        <div class="container">
+          <div class="numbered-list">
+            <a class="numbered-item" href="works">
+              <span class="digit"> 02 • </span>
+              <span class="label">works</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" data-scroll-section>
+        <div class="container" data-scroll data-scroll-speed="0.5">
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="portfolio-content">
+                <h1>ActiveLook</h1>
+                <span class="separator"></span>
+                <p>lead designer</p>
+                <p class="italic">la chouette company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-grid project-5" data-scroll-section>
+        <div class="container">
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-desc">
+                <h3 class="h2">Le projet</h3>
+                <p>Mise à jour & évolution de l'application ActiveLook permettant d'utiliser les lunettes connectées intégrant la technologie Microoled.</p>
+                <ul>
+                  <li>Mise à jour de du flow complet de l'onbaording utilisateur via la création de support papier, et l'actualisation du parcours sur l'app mobile</li>
+                  <li>Participation à la mise en place de la méthodologie Scrum</li>
+                  <li>Suivi de projet, suivi de la relation client et partenaires</li>
+                  <li>Définition de la roadmap, suivi de planning et budget</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-img img-1"></div>
+            </div>
+          </div>
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-img img-2"></div>
+            </div>
+            <div class="column is-half-desktop">
+              <div class="portfolio-grid-img img-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="back" data-scroll-section>
+        <div class="container" data-scroll data-scroll-speed="0.5">
+          <a href="works">↵ Retour à la liste des projets </a>
+        </div>
+      </section>
+
+
+
+      <!-- Footer -->
+      <footer class="footer" data-scroll-section>
+        <div class="container">
+          <div class="content-footer">
+            <div class="social">
+              <a href="https://medium.com/@so.louvrier" target="_blank" class="medium" data-scroll data-scroll-speed="1" data-scroll-position="bottom"></a>
+              <a href="https://www.linkedin.com/in/solene-louvrier/" target="_blank" class="linkedin" data-scroll data-scroll-speed="2" data-scroll-position="bottom"></a>
+              <a href="https://www.instagram.com/miranda_cairn/" target="_blank" class="instagram" data-scroll data-scroll-speed="3" data-scroll-position="bottom"></a>
+            </div>
+            <h2> solène <span> louvrier </span> </h2>
+            <p>
+              <a href="mailto:contact@bonjoursolene.fr">contact@bonjoursolene.fr</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="build/main.js" charset="utf-8"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35748423-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-35748423-1');
+    </script>
+  </body>
+</html>

@@ -51,6 +51,11 @@ h4, .h4 {
   opacity: 0.4!important;
 }
 
+.italic {
+  font-style: italic;
+  color: $primary-light;
+}
+
 //global
 body.hp {
   background-image: url('../img/bg-80.jpg');
@@ -306,6 +311,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
       }
     }
   }
+  .vrac {
+    p {
+      max-width: 60%;
+    }
+  }
 }
 
 //works
@@ -383,6 +393,23 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
 }
 */
+.portfolio-grid.project-1 {
+  .img-1 {
+    background-image: url('../img/project-1/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2 {
+    background-image: url('../img/project-1/mockup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3 {
+    background-image: url('../img/project-1/outside.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .portfolio-grid.project-2 {
   .img-1 {
     background-image: url('../img/project-2/ipad.jpg');
@@ -431,6 +458,24 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .img-3 {
     background-image: url('../img/project-4/ipad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.portfolio-grid.project-5 {
+  .img-1 {
+    background-image: url('../img/project-5/mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2 {
+    background-image: url('../img/project-5/ipad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3 {
+    background-image: url('../img/project-5/wireflow.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
