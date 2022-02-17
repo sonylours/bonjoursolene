@@ -1,4 +1,5 @@
 // -> cd /Users/solene/Sites/bonjoursolene ; npm run watch
+// -> cd /Users/solene/Sites/bonjoursolene ; npm run build; git add -A; git commit -am "update"; git push
 import LocomotiveScroll from 'locomotive-scroll';
 
 const scroll = new LocomotiveScroll({
