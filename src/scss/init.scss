@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 //Import font-face
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @font-face {
     font-family: "jazmin_altmedium";
     src: url('../font/jazmin_alt_medium-webfont.woff2') format('woff2'),
@@ -47,8 +48,8 @@ $widescreen-enabled: true;
 $fullhd-enabled: true;
 
 $family-serif: "jazmin_altmedium", serif;
-$family-sans-serif: "jeko-semibold", sans-serif;
-$family-sans-serif-bold :"jeko-black", sans-serif;
+$family-sans-serif: "Archivo Black", sans-serif;
+$family-sans-serif-bold :"Archivo Black", sans-serif;
 
 $family-primary: $family-sans-serif;
 $family-secondary: $family-serif;
